@@ -12,9 +12,9 @@ resource "aws_iam_instance_profile" "profile" {
 }
 
 resource "aws_iam_role" "role" {
-  force_detach_policies  = true
-  description            = var.description
-  name                   = "${var.identifier}-${terraform.workspace}"
+  force_detach_policies = true
+  description           = var.description
+  name                  = "${var.identifier}-${terraform.workspace}"
 
   assume_role_policy = <<EOF
 {
@@ -35,7 +35,7 @@ EOF
 }
 
 resource "aws_iam_role_policy_attachment" "attach" {
-  count      = length(var.iam_policies_to_attach)
+  count = length(var.iam_policies_to_attach)
 
   policy_arn = element(var.iam_policies_to_attach, count.index)
   role       = aws_iam_role.role.name
