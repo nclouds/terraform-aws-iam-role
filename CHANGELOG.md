@@ -8,10 +8,17 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 
+<a name="v0.1.1"></a>
+## [v0.1.1] - 2021-02-17
+DOCS:
+- Add working examples and improve documentation
+
+
 <a name="v0.1.0"></a>
 ## v0.1.0 - 2020-08-21
 DOCS:
 - adding base documentation
 
 
-[Unreleased]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.1.1...HEAD
+[v0.1.1]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.1.0...v0.1.1
