@@ -1,6 +1,6 @@
 locals {
   urls = [
-    for url in compact(distinct(concat(var.provider_urls, [var.provider_url]))) :
+    for url in compact(distinct(var.provider_urls)) :
     replace(url, "https://", "")
   ]
 
