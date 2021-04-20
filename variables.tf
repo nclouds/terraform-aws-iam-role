@@ -10,7 +10,8 @@ variable "description" {
 }
 
 variable "aws_service_principal" {
-  description = "The service principal allowed to assume this role. Example: 'ec2.amazonaws.com'"
+  description = "The service principal allowed to assume this role. Example: 'ec2.amazonaws.com'. Not needed if using oidc"
+  default     = ""
   type        = string
 }
 
