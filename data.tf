@@ -9,7 +9,7 @@ data "aws_iam_policy_document" "default" {
     actions = ["sts:AssumeRole"]
     principals {
       type = "Service"
-      identifiers = "${var.aws_service_principal}"
+      identifiers = ["${var.aws_service_principal}"]
     }
   }
 }
