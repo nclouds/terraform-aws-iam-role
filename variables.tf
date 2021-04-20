@@ -20,6 +20,18 @@ variable "iam_policies_to_attach" {
   type        = list(string)
 }
 
+variable "provider_urls" {
+  description = "List of URLs of the OIDC Providers"
+  type        = list(string)
+  default     = []
+}
+
+variable "oidc_fully_qualified_subjects" {
+  description = "The fully qualified OIDC subjects to be added to the role policy"
+  type        = set(string)
+  default     = []
+}
+
 variable "tags" {
   description = "Tags to be applied to the resource"
   default     = {}
