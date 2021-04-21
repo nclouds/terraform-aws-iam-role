@@ -13,25 +13,10 @@ resource "aws_iam_instance_profile" "profile" {
 
 resource "aws_iam_role" "role" {
   force_detach_policies = true
+  assume_role_policy    = local.assume_role_policy
   description           = var.description
   name                  = "${var.identifier}-${terraform.workspace}"
-
-  assume_role_policy = <<EOF
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Action": "sts:AssumeRole",
-      "Principal": {
-        "Service": "${var.aws_service_principal}"
-      },
-      "Effect": "Allow"
-    }
-  ]
-}
-EOF
-
-  tags = local.tags
+  tags                  = local.tags
 }
 
 resource "aws_iam_role_policy_attachment" "attach" {

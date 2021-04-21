@@ -10,7 +10,8 @@ variable "description" {
 }
 
 variable "aws_service_principal" {
-  description = "The service principal allowed to assume this role. Example: 'ec2.amazonaws.com'"
+  description = "The service principal allowed to assume this role. Example: 'ec2.amazonaws.com'. Not needed if using oidc"
+  default     = ""
   type        = string
 }
 
@@ -18,6 +19,18 @@ variable "iam_policies_to_attach" {
   description = "List of ARNs of IAM policies to attach"
   default     = []
   type        = list(string)
+}
+
+variable "provider_urls" {
+  description = "List of URLs of the OIDC Providers"
+  type        = list(string)
+  default     = []
+}
+
+variable "oidc_fully_qualified_subjects" {
+  description = "The fully qualified OIDC subjects to be added to the role policy"
+  type        = set(string)
+  default     = []
 }
 
 variable "tags" {
