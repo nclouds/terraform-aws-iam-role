@@ -1,13 +1,14 @@
 locals {
+  identifier = var.append_workspace ? "${var.identifier}-${terraform.workspace}" : var.identifier
   default_tags = {
     Environment = terraform.workspace
-    Name        = "${var.identifier}-${terraform.workspace}"
+    Name        = local.identifier
   }
   tags = merge(local.default_tags, var.tags)
 }
 
 resource "aws_iam_instance_profile" "profile" {
-  name = "${var.identifier}-${terraform.workspace}"
+  name = local.identifier
   role = aws_iam_role.role.name
 }
 
@@ -15,7 +16,7 @@ resource "aws_iam_role" "role" {
   force_detach_policies = true
   assume_role_policy    = local.assume_role_policy
   description           = var.description
-  name                  = "${var.identifier}-${terraform.workspace}"
+  name                  = local.identifier
   tags                  = local.tags
 }
 
