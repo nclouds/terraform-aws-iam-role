@@ -5,10 +5,10 @@ data "aws_iam_policy_document" "default" {
   count = length(var.oidc_fully_qualified_subjects) > 0 ? 0 : 1
 
   statement {
-    effect = "Allow"
+    effect  = "Allow"
     actions = ["sts:AssumeRole"]
     principals {
-      type = "Service"
+      type        = "Service"
       identifiers = [var.aws_service_principal]
     }
   }
@@ -21,11 +21,11 @@ data "aws_iam_policy_document" "oidc" {
     for_each = local.urls
 
     content {
-      effect = "Allow"
+      effect  = "Allow"
       actions = ["sts:AssumeRoleWithWebIdentity"]
 
       principals {
-        type = "Federated"
+        type        = "Federated"
         identifiers = ["arn:${data.aws_partition.current.partition}:iam::${data.aws_caller_identity.current.account_id}:oidc-provider/${statement.value}"]
       }
 

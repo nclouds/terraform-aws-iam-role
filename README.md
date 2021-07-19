@@ -9,7 +9,8 @@ Terraform module to provision [`IAM Role`](https://aws.amazon.com/iam/) on AWS.
 Create a IAM Role.
 ```hcl
     module "example_role" {
-        source      = "git@github.com:nclouds/terraform-aws-iam-role.git?ref=v0.1.1"
+        source      = "app.terraform.io/ncodelibrary/iam-role/aws"
+        version     = "0.1.2"
         description = "Example IAM Role"
         iam_policies_to_attach = [
             "arn:aws:iam::aws:policy/service-role/AmazonEC2ContainerServiceforEC2Role",
@@ -51,18 +52,24 @@ No Modules.
 
 | Name |
 |------|
+| [aws_caller_identity](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) |
 | [aws_iam_instance_profile](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_instance_profile) |
+| [aws_iam_policy_document](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) |
 | [aws_iam_role](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role) |
 | [aws_iam_role_policy_attachment](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy_attachment) |
+| [aws_partition](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/partition) |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| aws\_service\_principal | The service principal allowed to assume this role. Example: 'ec2.amazonaws.com' | `string` | n/a | yes |
+| append\_workspace | Appends the terraform workspace at the end of resource names, <identifier>-<worspace> | `bool` | `true` | no |
+| aws\_service\_principal | The service principal allowed to assume this role. Example: 'ec2.amazonaws.com'. Not needed if using oidc | `string` | `""` | no |
 | description | Description for the IAM role | `string` | `"Created by terraform"` | no |
 | iam\_policies\_to\_attach | List of ARNs of IAM policies to attach | `list(string)` | `[]` | no |
 | identifier | Name for the resources | `string` | n/a | yes |
+| oidc\_fully\_qualified\_subjects | The fully qualified OIDC subjects to be added to the role policy | `set(string)` | `[]` | no |
+| provider\_urls | List of URLs of the OIDC Providers | `list(string)` | `[]` | no |
 | tags | Tags to be applied to the resource | `map` | `{}` | no |
 
 ## Outputs
