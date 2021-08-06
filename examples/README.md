@@ -1,3 +1,6 @@
+[SourceCode](https://github.com/nclouds/terraform-aws-iam-role/tree/v0.1.2/examples)   
+[Report an Issue](https://github.com/nclouds/terraform-aws-iam-role/issues)
+
 # IAM example
 
 Configuration in this directory creates the following Resources:
