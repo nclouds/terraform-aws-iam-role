@@ -20,7 +20,7 @@ module "external_dns_role" {
     "arn:aws:iam::aws:policy/service-role/AmazonEC2ContainerServiceforEC2Role",
     "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
   ]
-  provider_urls                 = ["https://oidc.eks.us-west-2.amazonaws.com/id/xxxxxxxxxxxxxxxxxxx"]
-  identifier                    = "${var.identifier}-oidc"
-  tags                          = var.tags
+  provider_urls = ["https://oidc.eks.us-west-2.amazonaws.com/id/xxxxxxxxxxxxxxxxxxx"]
+  identifier    = "${var.identifier}-oidc"
+  tags          = var.tags
 }

@@ -70,7 +70,7 @@ No Modules.
 | identifier | Name for the resources | `string` | n/a | yes |
 | oidc\_fully\_qualified\_subjects | The fully qualified OIDC subjects to be added to the role policy | `set(string)` | `[]` | no |
 | provider\_urls | List of URLs of the OIDC Providers | `list(string)` | `[]` | no |
-| tags | Tags to be applied to the resource | `map` | `{}` | no |
+| tags | Tags to be applied to the resource | `map(any)` | `{}` | no |
 
 ## Outputs
 
