@@ -10,6 +10,7 @@ locals {
 resource "aws_iam_instance_profile" "profile" {
   name = local.identifier
   role = aws_iam_role.role.name
+  tags = local.tags
 }
 
 resource "aws_iam_role" "role" {
