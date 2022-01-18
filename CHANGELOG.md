@@ -8,6 +8,19 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 
+<a name="v0.2.0"></a>
+## [v0.2.0] - 2022-01-19
+BUG FIXES:
+- add tags to aws_iam_instance_profile resource
+
+DOCS:
+- Update Release Documentation
+
+FEATURES:
+- Add CODEOWNERS file
+- Run Examples in Actions
+
+
 <a name="v0.1.3"></a>
 ## [v0.1.3] - 2021-08-06
 DOCS:
@@ -34,7 +47,8 @@ DOCS:
 - adding base documentation
 
 
-[Unreleased]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.1.3...HEAD
+[Unreleased]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.2.0...HEAD
+[v0.2.0]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.1.3...v0.2.0
 [v0.1.3]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.1.2...v0.1.3
 [v0.1.2]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.1.1...v0.1.2
 [v0.1.1]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.1.0...v0.1.1
