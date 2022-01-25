@@ -1,4 +1,9 @@
-# AWS Identity and Access Management Role (IAM Role) Terraform Module
+<p align="left"><img width="256" height="100" src="https://www.nclouds.com/img/nclouds-logo.svg"></p>  
+
+![Terraform](https://github.com/nclouds/terraform-aws-iam-role/workflows/Terraform/badge.svg)
+# nCode Library
+
+## AWS Identity and Access Management Role (IAM Role) Terraform Module
 
 Terraform module to provision [`IAM Role`](https://aws.amazon.com/iam/) on AWS.
 
