@@ -44,3 +44,9 @@ variable "append_workspace" {
   default     = true
   type        = bool
 }
+
+variable "principal_type" {
+  type        = string
+  default     = "Service"
+  description = "Principal type to be used i.e. Service, AWS"
+}
