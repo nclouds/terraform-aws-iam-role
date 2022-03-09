@@ -8,7 +8,7 @@ data "aws_iam_policy_document" "default" {
     effect  = "Allow"
     actions = ["sts:AssumeRole"]
     principals {
-      type        = "Service"
+      type        = var.principal_type
       identifiers = [var.aws_service_principal]
     }
   }

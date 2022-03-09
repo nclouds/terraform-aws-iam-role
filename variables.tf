@@ -23,14 +23,14 @@ variable "iam_policies_to_attach" {
 
 variable "provider_urls" {
   description = "List of URLs of the OIDC Providers"
-  type        = list(string)
   default     = []
+  type        = list(string)
 }
 
 variable "oidc_fully_qualified_subjects" {
   description = "The fully qualified OIDC subjects to be added to the role policy"
-  type        = set(string)
   default     = []
+  type        = set(string)
 }
 
 variable "tags" {
@@ -43,4 +43,10 @@ variable "append_workspace" {
   description = "Appends the terraform workspace at the end of resource names, <identifier>-<worspace>"
   default     = true
   type        = bool
+}
+
+variable "principal_type" {
+  description = "Principal type to be used i.e. Service, AWS"
+  default     = "Service"
+  type        = string
 }
