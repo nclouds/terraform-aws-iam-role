@@ -8,6 +8,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 
+<a name="v0.2.2"></a>
+## [v0.2.2] - 2022-04-07
+FEATURES:
+- Update provider to 4.x
+
+
 <a name="v0.2.1"></a>
 ## [v0.2.1] - 2022-02-15
 FEATURES:
@@ -57,7 +63,8 @@ DOCS:
 - adding base documentation
 
 
-[Unreleased]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.2.1...HEAD
+[Unreleased]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.2.2...HEAD
+[v0.2.2]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.2.1...v0.2.2
 [v0.2.1]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.2.0...v0.2.1
 [v0.2.0]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.1.3...v0.2.0
 [v0.1.3]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.1.2...v0.1.3

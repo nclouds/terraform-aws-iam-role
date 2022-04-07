@@ -15,7 +15,7 @@ Create a IAM Role.
 ```hcl
     module "example_role" {
         source      = "app.terraform.io/ncodelibrary/iam-role/aws"
-        version     = "0.2.1"
+        version     = "0.2.2"
         description = "Example IAM Role"
         iam_policies_to_attach = [
             "arn:aws:iam::aws:policy/service-role/AmazonEC2ContainerServiceforEC2Role",
