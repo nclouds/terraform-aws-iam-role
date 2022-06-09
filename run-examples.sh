@@ -18,7 +18,7 @@ terraform_plan () {
 }
 
 run_examples () {
-    if [ -d examples ]
+    if [[ -d examples ]]
         then 
         EXAMPLES=$(find ./examples -mindepth 1 -maxdepth 1 -type d -exec echo {} \;)
         if [[ -z $EXAMPLES ]]
