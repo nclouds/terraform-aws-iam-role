@@ -8,6 +8,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 
+<a name="v0.2.3"></a>
+## [v0.2.3] - 2022-06-21
+FEATURES:
+- Enable nClouds PreCommit Hook
+- Enable OPA Checks
+- Update Module References to Github
+
+
 <a name="v0.2.2"></a>
 ## [v0.2.2] - 2022-04-07
 FEATURES:
@@ -63,7 +71,8 @@ DOCS:
 - adding base documentation
 
 
-[Unreleased]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.2.2...HEAD
+[Unreleased]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.2.3...HEAD
+[v0.2.3]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.2.2...v0.2.3
 [v0.2.2]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.2.1...v0.2.2
 [v0.2.1]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.2.0...v0.2.1
 [v0.2.0]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.1.3...v0.2.0
