@@ -8,8 +8,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 
+<a name="v0.2.5"></a>
+## [v0.2.5] - 2022-07-23
+BUGFIX:
+- Update Examples for OPA Checks
+
+
 <a name="v0.2.4"></a>
-## [v0.2.4] - 2022-07-15
+## [v0.2.4] - 2022-07-23
 FEATURES:
 - Enable Slack Notifications
 
@@ -75,7 +81,8 @@ DOCS:
 - adding base documentation
 
 
-[Unreleased]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.2.4...HEAD
+[Unreleased]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.2.5...HEAD
+[v0.2.5]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.2.4...v0.2.5
 [v0.2.4]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.2.3...v0.2.4
 [v0.2.3]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.2.2...v0.2.3
 [v0.2.2]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.2.1...v0.2.2
