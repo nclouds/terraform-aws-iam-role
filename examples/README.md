@@ -1,4 +1,4 @@
-[SourceCode](https://github.com/nclouds/terraform-aws-iam-role/tree/v0.2.5/examples)   
+[SourceCode](https://github.com/nclouds/terraform-aws-iam-role/tree/master/examples)   
 [Report an Issue](https://github.com/nclouds/terraform-aws-iam-role/issues)
 
 # IAM example
