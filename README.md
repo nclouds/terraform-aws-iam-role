@@ -71,14 +71,14 @@ Here are some working examples of using this module:
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_append_workspace"></a> [append\_workspace](#input\_append\_workspace) | Appends the terraform workspace at the end of resource names, <identifier>-<worspace> | `bool` | `true` | no |
-| <a name="input_aws_service_principal"></a> [aws\_service\_principal](#input\_aws\_service\_principal) | The service principal allowed to assume this role. Example: 'ec2.amazonaws.com'. Not needed if using oidc | `string` | `""` | no |
 | <a name="input_description"></a> [description](#input\_description) | Description for the IAM role | `string` | `"Created by terraform"` | no |
 | <a name="input_iam_policies_to_attach"></a> [iam\_policies\_to\_attach](#input\_iam\_policies\_to\_attach) | List of ARNs of IAM policies to attach | `list(string)` | `[]` | no |
 | <a name="input_identifier"></a> [identifier](#input\_identifier) | Name for the resources | `string` | n/a | yes |
 | <a name="input_oidc_fully_qualified_subjects"></a> [oidc\_fully\_qualified\_subjects](#input\_oidc\_fully\_qualified\_subjects) | The fully qualified OIDC subjects to be added to the role policy | `set(string)` | `[]` | no |
-| <a name="input_principal_type"></a> [principal\_type](#input\_principal\_type) | Principal type to be used i.e. Service, AWS | `string` | `"Service"` | no |
 | <a name="input_provider_urls"></a> [provider\_urls](#input\_provider\_urls) | List of URLs of the OIDC Providers | `list(string)` | `[]` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Tags to be applied to the resource | `map(any)` | `{}` | no |
+| <a name="input_trusted_role_arns"></a> [trusted\_role\_arns](#input\_trusted\_role\_arns) | ARNs of AWS IAM Roles who can assume these roles | `list(string)` | `[]` | no |
+| <a name="input_trusted_role_services"></a> [trusted\_role\_services](#input\_trusted\_role\_services) | AWS Services that can assume these roles | `list(string)` | `[]` | no |
 
 ## Outputs
 

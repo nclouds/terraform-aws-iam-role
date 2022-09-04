@@ -8,8 +8,13 @@ data "aws_iam_policy_document" "default" {
     effect  = "Allow"
     actions = ["sts:AssumeRole"]
     principals {
-      type        = var.principal_type
-      identifiers = [var.aws_service_principal]
+      type        = "AWS"
+      identifiers = var.trusted_role_arns
+    }
+
+    principals {
+      type        = "Service"
+      identifiers = var.trusted_role_services
     }
   }
 }

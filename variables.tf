@@ -9,12 +9,6 @@ variable "description" {
   type        = string
 }
 
-variable "aws_service_principal" {
-  description = "The service principal allowed to assume this role. Example: 'ec2.amazonaws.com'. Not needed if using oidc"
-  default     = ""
-  type        = string
-}
-
 variable "iam_policies_to_attach" {
   description = "List of ARNs of IAM policies to attach"
   default     = []
@@ -45,8 +39,15 @@ variable "append_workspace" {
   type        = bool
 }
 
-variable "principal_type" {
-  description = "Principal type to be used i.e. Service, AWS"
-  default     = "Service"
-  type        = string
+
+variable "trusted_role_arns" {
+  description = "ARNs of AWS IAM Roles who can assume these roles"
+  type        = list(string)
+  default     = []
+}
+
+variable "trusted_role_services" {
+  description = "AWS Services that can assume these roles"
+  type        = list(string)
+  default     = []
 }

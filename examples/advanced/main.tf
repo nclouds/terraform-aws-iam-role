@@ -1,10 +1,3 @@
-# Create an IAM Role
-module "example_role" {
-  source                = "../"
-  aws_service_principal = "ec2.amazonaws.com"
-  identifier            = "${var.identifier}-role"
-}
-
 # Create an IAM Role with an OIDC Provider
 module "external_dns_role" {
   source                        = "../"
