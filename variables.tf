@@ -40,14 +40,14 @@ variable "append_workspace" {
 }
 
 
-variable "trusted_role_arns" {
+variable "trusted_iam_arns" {
   description = "ARNs of AWS IAM Roles who can assume these roles"
   type        = list(string)
   default     = []
 }
 
-variable "trusted_role_services" {
+variable "trusted_service_arns" {
   description = "AWS Services that can assume these roles"
   type        = list(string)
-  default     = []
+  default     = ["ec2.amazonaws.com"]
 }

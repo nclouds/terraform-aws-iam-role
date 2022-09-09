@@ -77,8 +77,8 @@ Here are some working examples of using this module:
 | <a name="input_oidc_fully_qualified_subjects"></a> [oidc\_fully\_qualified\_subjects](#input\_oidc\_fully\_qualified\_subjects) | The fully qualified OIDC subjects to be added to the role policy | `set(string)` | `[]` | no |
 | <a name="input_provider_urls"></a> [provider\_urls](#input\_provider\_urls) | List of URLs of the OIDC Providers | `list(string)` | `[]` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Tags to be applied to the resource | `map(any)` | `{}` | no |
-| <a name="input_trusted_role_arns"></a> [trusted\_role\_arns](#input\_trusted\_role\_arns) | ARNs of AWS IAM Roles who can assume these roles | `list(string)` | `[]` | no |
-| <a name="input_trusted_role_services"></a> [trusted\_role\_services](#input\_trusted\_role\_services) | AWS Services that can assume these roles | `list(string)` | `[]` | no |
+| <a name="input_trusted_iam_arns"></a> [trusted\_iam\_arns](#input\_trusted\_iam\_arns) | ARNs of AWS IAM Roles who can assume these roles | `list(string)` | `[]` | no |
+| <a name="input_trusted_service_arns"></a> [trusted\_service\_arns](#input\_trusted\_service\_arns) | AWS Services that can assume these roles | `list(string)` | <pre>[<br>  "ec2.amazonaws.com"<br>]</pre> | no |
 
 ## Outputs
 
