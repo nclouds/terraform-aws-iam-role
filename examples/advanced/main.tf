@@ -1,13 +1,6 @@
-# Create an IAM Role
-module "example_role" {
-  source                = "../"
-  aws_service_principal = "ec2.amazonaws.com"
-  identifier            = "${var.identifier}-role"
-}
-
 # Create an IAM Role with an OIDC Provider
 module "external_dns_role" {
-  source                        = "../"
+  source                        = "../../"
   oidc_fully_qualified_subjects = ["system:serviceaccount:kube-system:external-dns"]
   iam_policies_to_attach = [
     "arn:aws:iam::aws:policy/service-role/AmazonEC2ContainerServiceforEC2Role",
