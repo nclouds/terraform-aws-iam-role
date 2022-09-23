@@ -8,6 +8,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 
+<a name="v1.0.0"></a>
+## [v1.0.0] - 2022-09-19
+FEATURES:
+- Add support for multiple IAM Role and Service Principals
+
+
 <a name="v0.2.6"></a>
 ## [v0.2.6] - 2022-08-28
 FEATURES:
@@ -86,7 +92,8 @@ DOCS:
 - adding base documentation
 
 
-[Unreleased]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.2.6...HEAD
+[Unreleased]: https://github.com/nclouds/terraform-aws-iam-role/compare/v1.0.0...HEAD
+[v1.0.0]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.2.6...v1.0.0
 [v0.2.6]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.2.5...v0.2.6
 [v0.2.5]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.2.4...v0.2.5
 [v0.2.4]: https://github.com/nclouds/terraform-aws-iam-role/compare/v0.2.3...v0.2.4
