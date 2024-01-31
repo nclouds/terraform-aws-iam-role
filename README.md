@@ -20,7 +20,8 @@ Create a IAM Role.
             "arn:aws:iam::aws:policy/service-role/AmazonEC2ContainerServiceforEC2Role",
             "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
         ]
-        aws_service_principal = "ec2.amazonaws.com"
+        trusted_service_arns  = ["ec2.amazonaws.com", "ecs.amazonaws.com", "elasticloadbalancing.amazonaws.com"]
+        trusted_iam_arns      = ["arn:aws:iam::1234567890:user/hugo"]
         identifier            = "example-role"
         tags                  = {
             Owner       = "sysops"
