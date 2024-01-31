@@ -14,7 +14,7 @@ Terraform module to provision [`IAM Role`](https://aws.amazon.com/iam/) on AWS.
 Create a IAM Role.
 ```hcl
     module "example_role" {
-        source      = "github.com/nclouds/terraform-aws-iam-role?ref=v1.0.3"
+        source      = "github.com/nclouds/terraform-aws-iam-role?ref=v1.0.4"
         description = "Example IAM Role"
         iam_policies_to_attach = [
             "arn:aws:iam::aws:policy/service-role/AmazonEC2ContainerServiceforEC2Role",

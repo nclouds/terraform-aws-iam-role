@@ -8,6 +8,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 
+<a name="v1.0.4"></a>
+## [v1.0.4] - 2024-01-31
+
+- Fixing example in README to use correct vars
+
+
 <a name="v1.0.3"></a>
 ## [v1.0.3] - 2023-07-18
 
@@ -111,7 +117,8 @@ DOCS:
 - adding base documentation
 
 
-[Unreleased]: https://github.com/nclouds/terraform-aws-iam-role/compare/v1.0.3...HEAD
+[Unreleased]: https://github.com/nclouds/terraform-aws-iam-role/compare/v1.0.4...HEAD
+[v1.0.4]: https://github.com/nclouds/terraform-aws-iam-role/compare/v1.0.3...v1.0.4
 [v1.0.3]: https://github.com/nclouds/terraform-aws-iam-role/compare/v1.0.2...v1.0.3
 [v1.0.2]: https://github.com/nclouds/terraform-aws-iam-role/compare/v1.0.1...v1.0.2
 [v1.0.1]: https://github.com/nclouds/terraform-aws-iam-role/compare/v1.0.0...v1.0.1
